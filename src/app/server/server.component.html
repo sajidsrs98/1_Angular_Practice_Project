@@ -1,0 +1,23 @@
+<h3>String Interpolation</h3> 
+<h4>{{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus() }}.</h4>
+<h3>Property Binding On disabled Property</h3>
+<button class = "btn btn-primary"
+[disabled]="!allowNewServer1"
+(click)="onCreateServer()">
+    Add New Server(Event Binding)</button>
+<p>{{ serverCreationStatus }}</p>    
+<button class = "btn btn-secondary" 
+[disabled]="!allowNewServer2"
+(click)="onUpdateServer()">
+    Update New Server(Event Binding)</button>
+<p>{{ serverUpdateStatus }}</p>
+<button class = "btn btn-success" 
+[disabled]="!allowNewServer3"
+(click)="onGetServer()">
+    Get New Server(Event Binding)</button>
+<p>{{ serverGetStatus }}</p>
+<button class = "btn btn-warning" 
+[disabled]="!allowNewServer4"
+(click)="onDeleteServer()">
+    Delete New Server(Event Binding)</button>
+<p>{{ serverDeleteStatus }}</p>

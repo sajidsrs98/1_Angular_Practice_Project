@@ -1,0 +1,12 @@
+h4 {
+    margin: 10px;
+    padding: 10px;
+}
+
+.Warning {
+    background-color: rgb(245, 196, 196);
+}
+
+.Success {
+    background-color: rgb(191, 235, 191);
+}
